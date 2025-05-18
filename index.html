@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WetJokes.com - Better Comebacks</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #111;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2em;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.3em;
+      color: #00d9ff;
+    }
+
+    p.tagline {
+      color: #aaa;
+      font-size: 1.2rem;
+      margin-bottom: 2em;
+    }
+
+    .comeback-box {
+      background: #222;
+      border: 2px solid #00d9ff;
+      border-radius: 12px;
+      padding: 2em;
+      width: 90%;
+      max-width: 600px;
+      margin-bottom: 2em;
+      font-size: 1.5rem;
+      min-height: 100px;
+      line-height: 1.4;
+    }
+
+    button {
+      background-color: #00d9ff;
+      border: none;
+      padding: 1em 2em;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      color: #111;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #00b0cc;
+    }
+
+    footer {
+      margin-top: 3em;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>WetJokes.com</h1>
+  <p class="tagline">Never get roasted again 🔥 – Nigerian & Global Comebacks</p>
+
+  <div class="comeback-box" id="comeback">
+    Click the button to get a savage comeback.
+  </div>
+
+  <button onclick="generateComeback()">Generate Comeback</button>
+
+  <footer>
+    &copy; 2025 WetJokes.com | Built by Trinity 🔥
+  </footer>
+
+  <script>
+    const comebacks = [
+      // General Comebacks
+      "You're not stupid — you just have bad luck thinking.",
+      "You're like a cloud. When you disappear, it's a beautiful day.",
+      "If I had a dollar for every smart thing you said, I'd be broke.",
+      "You bring everyone so much joy… when you leave the room.",
+      "Your secrets are always safe with me. I never even listen when you tell me them.",
+      "You're the reason shampoo has instructions.",
+      "You're not the dumbest person I know. But you better hope they don’t die.",
+      "I’d agree with you, but then we’d both be wrong.",
+      "You're as useless as the 'ueue' in 'queue'.",
+      "You're proof that even evolution takes breaks.",
+      "You have something money can't buy… basic sense.",
+      "You’re not built for an argument. Your mouth runs faster than your brain.",
+      
+      // Nigerian Comebacks 🇳🇬🔥
+      "Your brain is on break — permanent strike like ASUU.",
+      "Who gave you the audacity? Return it, it’s fake.",
+      "You’re moving mad like PHCN bills in December.",
+      "You’re talking as if your village people are winning.",
+      "Your sense of reasoning is still under construction.",
+      "You dey talk anyhow like person wey chop expired gala.",
+      "If I wanted to hear nonsense, I’d tune in to NTA.",
+      "You argue like someone that lost WAEC 5 times.",
+      "You dey form hard guy, but mosquito go humble you.",
+      "You talk like your SIM card is still searching network.",
+      "You carry loud mouth but empty like sachet water.",
+      "You’re not even a clown, you’re the whole circus.",
+      "Keep talking, your mouth dey leak more than NEPA wires.",
+      "Your confidence dey pass your qualifications.",
+      "You dey talk like say you get data but no subscription.",
+      
+      // Short & Savage
+      "No one asked you.",
+      "You tried. It didn’t work.",
+      "Sit down, you're embarrassing yourself.",
+      "When I need advice from failure, I’ll let you know.",
+      "You're the reason the internet has a block button.",
+      "You speak fluently in foolishness.",
+      "You’ve got something on your face… never mind, it’s just your face.",
+      "Silence is golden. Please buy some.",
+      "The only thing you run is your mouth.",
+      "You weren’t dropped as a baby, you were thrown.",
+    ];
+
+    function generateComeback() {
+      const randomIndex = Math.floor(Math.random() * comebacks.length);
+      document.getElementById("comeback").innerText = comebacks[randomIndex];
+    }
+  </script>
+</body>
+</html>
